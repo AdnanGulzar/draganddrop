@@ -92,7 +92,7 @@ const DraggableList: React.FC = () => {
     // };
 
     return (
-        <DragDropContext onDragEnd={handleDragEnd}  >
+        <DragDropContext onDragEnd={handleDragEnd}    >
             <Droppable droppableId="top-level-droppable" type="TOP_LEVEL_ITEM">
                 {(provided) => (<>
                     <List {...provided.droppableProps} ref={provided.innerRef}>

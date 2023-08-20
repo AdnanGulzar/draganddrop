@@ -12,12 +12,12 @@ const AddListSubItem: React.FC<AddListSubItemProps> = ({ handleFunction, parentI
         <ListItem>
             <ListItemText>
                 <TextField
-                    label="New Item"
+                    label="New Sub Item"
                     value={newItemText}
                     onChange={(e) => setNewItemText(e.target.value)}
                 />
                 <Button onClick={() => handleFunction(parentIndex, newItemText, setNewItemText)}>
-                    Add Item
+                    Add Sub Item
                 </Button>
             </ListItemText>
         </ListItem>
